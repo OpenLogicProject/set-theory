@@ -1,7 +1,7 @@
 # set-theory
 # Set Theory: An Open Introduction
 
-![Book Cover](http://builds.openlogicproject.org/courses/set-theory/settheory.png)\ 
+![Book Cover](http://builds.openlogicproject.org/courses/set-theory/settheory.png)
 
 _Set Theory: An Open Introduction_ is a brief introduction to the
 philosophy of set theory. It is written for students with a little
