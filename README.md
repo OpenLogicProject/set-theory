@@ -17,7 +17,9 @@ this book, students reading it might have a sense of:
 This repository/directory only contains the LaTeX files and
 illustrations needed to typeset the textbook _Set Theory_, which in
 turn requires the _[Open Logic
-Text](http://github.com/OpenLogicProject/OpenLogic/)_.
+Text](http://github.com/OpenLogicProject/OpenLogic/)_. Most of the
+material making up the text comes from [Tim
+Button](http://www.nottub.com/)'s _Open Set Theory_.
 
 You can [download the
 PDF](http://builds.openlogicproject.org/courses/set-theory/settheory-screen.pdf)
