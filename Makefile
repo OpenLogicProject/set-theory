@@ -12,5 +12,5 @@ index.html: README.md  webpage-template.html settheory-screen.pdf
 	pandoc --template webpage-template.html -f markdown -t html -o index.html README.md
 
 olprevision.tex: FORCE_MAKE
-	grep shash ../../.git/gitHeadInfo.gin |sed 's/[^{]*{\([^}]*\)},/\1/' > olprevision.tex
-	grep authsdate ../../.git/gitHeadInfo.gin |sed 's/[^{]*{\([^}]*\)},/(\1)./' >> olprevision.tex
+	../../misc/makeolprevision ../..
+
