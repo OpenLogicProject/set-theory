@@ -190,60 +190,87 @@ consider in \olref[sth][][]{part}. As in \olref[sfr][][]{part}, the
 choice of lowercase and uppercase letters is guided only by
 readability:
 
-\
-\\\emph{Extensionality.} 
-\\$\forall A \forall B(\forall x(x \in A \liff x \in B) \lif A = B)$
+\begin{defish}
+\emph{Extensionality.} 
+\[\forall A \forall B(\forall x(x \in A \liff x \in B) \lif A = B)\]
+\end{defish}
 
-\
-\\\emph{Union.} 
-\\$\forall A \exists U \forall x(x \in U \liff (\exists b \in A)x \in b)$
-\\i.e., $\bigcup A$ exists for any set $A$
+\begin{defish}
+\emph{Union.} 
+\[
+\forall A \exists U \forall x(x \in U \liff (\exists b \in A)x \in b),
+\]
+i.e., $\bigcup A$ exists for any set~$A$.
+\end{defish}
 
-\
-\\\emph{Pairs.} 
-\\$\forall a \forall b \exists P \forall x (x \in P \liff (x = a \lor x = b))$
-\\i.e., $\{a, b\}$ exists for any $a$ and $b$
+\begin{defish}
+\emph{Pairs.} 
+\[
+\forall a \forall b \exists P \forall x (x \in P \liff
+(x = a \lor x = b)),
+\]
+i.e., $\{a, b\}$ exists for any $a$ and~$b$.
+\end{defish}
 
-\
-\\\emph{Powersets.}
-\\$\forall A \exists P \forall x(x \in P \liff (\forall z \in x)z \in A)$
-\\i.e., $\Pow{A}$ exists for any set $A$
+\begin{defish}
+\emph{Powersets.}
+\[
+\forall A \exists P \forall x(x \in P \liff (\forall z \in x)z \in A),
+\]
+i.e., $\Pow{A}$ exists for any set~$A$.
+\end{defish}
 
-\
-\\\emph{Infinity.} 	
-\\$\exists I((\exists o \in I)\forall x(x \notin o) \land (\forall x \in I)(\exists s \in I)\forall z(z \in s \liff (z \in x \lor z = x)))$
-\\i.e., there is a set with $\emptyset$ as !!a{element} and which 
-is closed under $x \mapsto x \cup \{x\}$
+\begin{defish}
+\emph{Infinity.}
+\begin{multline*}
+\exists I((\exists o \in I)\forall x(x \notin o) \land {}\\
+(\forall x \in I)(\exists s \in I)\forall z(z \in s \liff (z \in x \lor z = x))),
+\end{multline*}
+i.e., there is a set with $\emptyset$ as !!a{element} and which 
+is closed under $x \mapsto x \cup \{x\}$.
+\end{defish}
 
-\
-\\\emph{Foundation.}
-\\$\forall A(\forall x\, x \notin A \lor (\exists b \in A)(\forall x \in A)x \notin b)$
-\\i.e., $A = \emptyset$ or $(\exists b \in A)A\cap b = \emptyset$
 
-\
-\\\emph{Well-Ordering.} 
-\\For every set $A$, there is a relation that well-orders $A$.
-\\(Writing this one out in first-order logic is too painful to bother with).
+\begin{defish}
+\emph{Foundation.}
+\[
+\forall A(\forall x\, x \notin A \lor (\exists b \in A)(\forall x \in A)x \notin b),
+\]
+i.e., $A = \emptyset$ or $(\exists b \in A)A\cap b = \emptyset$.
+\end{defish}
 
-\
-\\\emph{Separation Scheme.} For any formula $\phi(x)$ which does not contain~``$S$'':
-\\$\forall A \exists S \forall x(x \in S \liff (\phi(x) \land x \in A))$
-\\i.e., $\Setabs{x \in A}{\phi(x)}$ exists for any set $A$
+\begin{defish}
+\emph{Well-Ordering.} 
+For every set $A$, there is a relation that well-orders $A$.
+(Writing this one out in first-order logic is too painful to bother with.)
+\end{defish}
 
-\
-\\\emph{Replacement Scheme.} For any formula $\phi(x, y)$ which does not contain~``$B$'':
-\\$\forall A((\forall x \in A)\lexists![y][\phi(x,y)] \lif \exists B \forall y (y \in B \liff (\exists x \in A)\phi(x,y)))$
-\\i.e., $\Setabs{y}{(\exists x \in A)\phi(x,y)}$ exists for any $A$, if $\phi$ is ``functional''
+\begin{defish}
+\emph{Separation Scheme.}
+For any formula $\phi(x)$ which does not contain~``$S$'':
+\[
+\forall A \exists S \forall x(x \in S \liff (\phi(x) \land x \in A)),
+\]
+i.e., $\Setabs{x \in A}{\phi(x)}$ exists for any set~$A$.
+\end{defish}
 
-\
-\\In both schemes, the formulas may contain parameters. 
+\begin{defish}
+\emph{Replacement Scheme.} For any formula $\phi(x, y)$ which does not contain~``$B$'':
+\[
+\forall A((\forall x \in A)\lexists![y][\phi(x,y)] \lif \exists B \forall y (y \in B \liff (\exists x \in A)\phi(x,y))),
+\]
+i.e., $\Setabs{y}{(\exists x \in A)\phi(x,y)}$ exists for any $A$, if $\phi$ is ``functional.''
+\end{defish}
 
-\
-\\$\Zminus$ is Extensionality, Union, Pairs, Powersets, Infinity, Separation.
-\\$\Z$ is $\Zminus$ plus Foundation.
-\\$\ZFminus$ is $\Z$ plus Replacement.
-\\$\ZF$ is $\ZFminus$ plus Foundation.
-\\$\ZFC$ is $\ZF$ plus Well-Ordering.
+In both schemes, the formulas may contain parameters. 
+
+\begin{description}
+\item[$\Zminus$] is Extensionality, Union, Pairs, Powersets, Infinity, Separation.
+\item[$\Z$] is $\Zminus$ plus Foundation.
+\item[$\ZFminus$] is $\Z$ plus Replacement.
+\item[$\ZF$] is $\ZFminus$ plus Foundation.
+\item[$\ZFC$] is $\ZF$ plus Well-Ordering.
+\end{description}
 
 \olimport*[set-theory/story]{story}
 
