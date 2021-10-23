@@ -230,7 +230,6 @@ i.e., there is a set with $\emptyset$ as !!a{element} and which
 is closed under $x \mapsto x \cup \{x\}$.
 \end{defish}
 
-
 \begin{defish}
 \emph{Foundation.}
 \[
@@ -262,7 +261,11 @@ i.e., $\Setabs{x \in A}{\phi(x)}$ exists for any set~$A$.
 i.e., $\Setabs{y}{(\exists x \in A)\phi(x,y)}$ exists for any $A$, if $\phi$ is ``functional.''
 \end{defish}
 
-In both schemes, the formulas may contain parameters. 
+In both schemes, the formulas may contain parameters. Indeed,
+throughout \olref[sth][][]{part}, we follow the convention that any
+formula can contain parameters. (See
+\olref[sfr][infinite][induction]{sec} for a reminder of what it means
+to say that a formula may contain parameters.)
 
 \begin{description}
 \item[$\Zminus$] is Extensionality, Union, Pairs, Powersets, Infinity, Separation.
@@ -281,9 +284,6 @@ set. In this chapter, we will attempt to extract most of the axioms of
 Zermelo's set theory, i.e.,~$\Z$. The approach is \emph{entirely}
 inspired by \citet{Boolos1971},  \citet{Scott1974}, and
 \citet{Shoenfield:AST}. 
-%(To a large extent, Boolos brought the cumulative-iterative
-%conception to philosophers; the conception was already widely known
-%among mathematicians.)
 
 \olsetchapter{nosection}
 \olimport*[set-theory/z]{z}
