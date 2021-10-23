@@ -1,7 +1,6 @@
-# set-theory
 # Set Theory: An Open Introduction
 
-![Book Cover](http://builds.openlogicproject.org/courses/set-theory/settheory.png)
+[![Book Cover](https://st.openlogicproject.org/settheory.png)](https://st.openlogicproject.org/settheory-screen.pdf)
 
 _Set Theory: An Open Introduction_ is a brief introduction to the
 philosophy of set theory. It is written for students with a little
@@ -17,19 +16,19 @@ this book, students reading it might have a sense of:
 This repository/directory only contains the LaTeX files and
 illustrations needed to typeset the textbook _Set Theory_, which in
 turn requires the _[Open Logic
-Text](http://github.com/OpenLogicProject/OpenLogic/)_. Most of the
+Text](https://github.com/OpenLogicProject/OpenLogic/)_. Most of the
 material making up the text comes from [Tim
 Button](http://www.nottub.com/)'s _Open Set Theory_.
 
 You can [download the
-PDF](http://builds.openlogicproject.org/courses/set-theory/settheory-screen.pdf)
+PDF](https://st.openlogicproject.org/settheory-screen.pdf)
 from the [Open Logic builds
-site](http://builds.openlogicproject.org/).
+site](https://st.openlogicproject.org/).
 
 To install and compile:
 
 - Download/install the _Open Logic Text_ from
-  [GitHub](http://github.com/OpenLogicProject/OpenLogic/), including
+  [GitHub](https://github.com/OpenLogicProject/OpenLogic/), including
   [photos](https://github.com/OpenLogicProject/photos) if you want those.
 - Navigate to the subdirectory `courses/`
 - Put the content of this repository into a subdirectory of it, say
@@ -58,7 +57,7 @@ in turn includes other files, most of them from the `OpenLogic`
 repository. So you won't get a complete book unless you download into
 the right subdirectory of and compile from there.
 
-[![Creative Commons License](http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png)](http://creativecommons.org/licenses/by/4.0/) 
+[![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png)](https://creativecommons.org/licenses/by/4.0/) 
 
 _[Set Theory](https://github.com/OpenLogicProject/set-theory/)_ by
 [Tim Button](http://nottub.com/) is licensed under a [Creative Commons
