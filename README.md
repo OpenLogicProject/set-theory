@@ -25,6 +25,10 @@ PDF](https://st.openlogicproject.org/settheory-screen.pdf)
 from the [Open Logic builds
 site](https://st.openlogicproject.org/).
 
+You can order a hardcopy of the Fall 2021 edition from
+Amazon [[US](https://www.amazon.com/dp/B09KN65FFQ)|[CA](https://www.amazon.ca/dp/B09KN65FFQ)|[UK](https://www.amazon.co.uk/dp/B09KN65FFQ)|[DE](https://www.amazon.de/dp/B09KN65FFQ)|[AU](https://www.amazon.com.au/dp/B09KN65FFQ)].
+
+
 To install and compile:
 
 - Download/install the _Open Logic Text_ from
